@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(250, 250, 250);
+}
+.page-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.phone-wrapper{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+}
+.phone-wrapper img{
+    width: 100%;
+    height: 40rem;
+}
+.options-wrapper{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.group-wrapper{
+    width: 100%;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(219, 219, 219);
+}
+.group-wrapper:nth-child(1){
+    min-height: 19rem;
+}
+.group-wrapper:nth-child(2){
+    min-height: 5rem;
+    margin: 0.7rem 0;
+}
+.instagram-logo{
+    width: 14rem;
+    margin: 1rem auto 0;
+}
+.profile-photo{
+    width: 6rem;
+    height: 6rem;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.profile-photo img{
+    height: 6rem;
+}
+.login{
+    height: 2rem;
+    margin: 1rem 0;
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: rgb(0, 184, 252);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+.link{
+    margin: 0.5rem 0;
+    color: rgb(0, 184, 252);
+    font-weight: 700;
+}
+.download-app-wrapper{
+    width: 100%;
+    margin: 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.download-buttons{
+    width: 100%;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.download-button{
+    width: 10rem;
+    height: 3rem;
+    margin: 0 0.4rem;
+    background-size: cover;
+}
+.download-button:nth-child(1){
+    background-image: url(./apple-store.png);
+}
+.download-button:nth-child(2){
+    background-image: url(./google-play.png);
+}
+
+@media (max-width: 800px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+    .phone-wrapper{
+        display: none;
+    }
+    .options-wrapper{
+        width: 30rem;
+    }
+    .group-wrapper{
+        border: none;
+    }
+}
