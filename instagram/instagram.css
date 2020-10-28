@@ -108,10 +108,10 @@ body{
     background-size: cover;
 }
 .download-button:nth-child(1){
-    background-image: url(./apple-store.png);
+    background-image: url(./img/apple-store.png);
 }
 .download-button:nth-child(2){
-    background-image: url(./google-play.png);
+    background-image: url(./img/google-play.png);
 }
 
 @media (max-width: 800px){
