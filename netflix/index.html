@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <title>Netflix Clone</title>
+</head>
+<body>
+    <header>
+        <div class="container flex-center">
+            <h2 class="logo">NETFLIX</h2>
+            <nav>
+                <ul class="menu-list flex-center">
+                    <li class="menu-item">
+                        <a class="active" href="./index.html">Início</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Séries</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Filmes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Minha Lista</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search-account-options flex-center">
+                <ul class="options-list">
+                    <li class="options-item flex-center">
+                        <i class="icon">
+                            <svg id="search-icon" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g>
+                                    <path d="M22.4,19.6l-4.8-4.8c0.9-1.4,1.4-3,1.4-4.8c0-5-4-9-9-9s-9,4-9,9s4,9,9,9c1.8,0,3.4-0.5,4.8-1.4l4.8,4.8   c0.4,0.4,0.9,0.6,1.4,0.6c1.1,0,2-0.9,2-2C23,20.4,22.8,19.9,22.4,19.6z M5,10c0-2.8,2.2-5,5-5s5,2.2,5,5s-2.2,5-5,5S5,12.8,5,10z"/>
+                                </g>
+                            </svg>
+                        </i>
+                        <input type="search" id="search-bar">
+                    </li>
+                    <li class="options-item flex-center">
+                        <i class="icon">
+                            <svg id="notifications" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g>
+                                    <path d="M381.7,225.9c0-97.6-52.5-130.8-101.6-138.2c0-0.5,0.1-1,0.1-1.6c0-12.3-10.9-22.1-24.2-22.1c-13.3,0-23.8,9.8-23.8,22.1   c0,0.6,0,1.1,0.1,1.6c-49.2,7.5-102,40.8-102,138.4c0,113.8-28.3,126-66.3,158h384C410.2,352,381.7,339.7,381.7,225.9z"/>
+                                    <path d="M256.2,448c26.8,0,48.8-19.9,51.7-43H204.5C207.3,428.1,229.4,448,256.2,448z"/>
+                                </g>
+                            </svg>
+                        </i>
+                    </li>
+                    <li class="options-item flex-center">
+                        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png" class="avatar" alt="avatar">
+                        <i class="icon">
+                            <svg class="account-dropdown" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg">
+                                <g>
+                                    <polygon points="2.002,10 16.001,24 30.002,10"/>
+                                </g>
+                            </svg>
+                        </i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Minha Lista</h3>
+            <ul class="carousel"></ul>
+        </section>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Originais Netflix</h3>
+            <ul class="carousel"></ul>
+        </section>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Em Alta</h3>
+            <ul class="carousel"></ul>
+        </section>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Assistir Novamente</h3>
+            <ul class="carousel"></ul>
+        </section>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Populares na Netflix</h3>
+            <ul class="carousel"></ul>
+        </section>
+        <section class="container carousel-wraper">
+            <h3 class="carousel-title">Lançamentos</h3>
+            <ul class="carousel"></ul>
+        </section>
+    </main>
+</body>
+</html>
