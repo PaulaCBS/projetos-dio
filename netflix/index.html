@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/basic-style.css">
+    <link rel="stylesheet" href="./css/navbar-style.css">
+    <link rel="stylesheet" href="./css/banner-style.css">
+    <link rel="stylesheet" href="./css/carousel-style.css">
+    <link rel="stylesheet" href="./css/media-queries.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet"> 
     <title>Netflix Clone</title>
 </head>
 <body>
     <header>
-        <div class="container flex-center">
+        <div id="nav" class="navbar-wraper container flex-center">
             <h2 class="logo">NETFLIX</h2>
             <nav>
                 <ul class="menu-list flex-center">
@@ -23,7 +29,10 @@
                         <a href="#">Filmes</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">Minha Lista</a>
+                        <a href="#">Mais recentes</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#">Minha lista</a>
                     </li>
                 </ul>
             </nav>
@@ -31,63 +40,79 @@
                 <ul class="options-list">
                     <li class="options-item flex-center">
                         <i class="icon">
-                            <svg id="search-icon" viewBox="0 0 24 24" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path d="M22.4,19.6l-4.8-4.8c0.9-1.4,1.4-3,1.4-4.8c0-5-4-9-9-9s-9,4-9,9s4,9,9,9c1.8,0,3.4-0.5,4.8-1.4l4.8,4.8   c0.4,0.4,0.9,0.6,1.4,0.6c1.1,0,2-0.9,2-2C23,20.4,22.8,19.9,22.4,19.6z M5,10c0-2.8,2.2-5,5-5s5,2.2,5,5s-2.2,5-5,5S5,12.8,5,10z"/>
-                                </g>
-                            </svg>
+                            <img src="./img/icons/search-icon.svg" alt="buscar">
                         </i>
-                        <input type="search" id="search-bar">
                     </li>
                     <li class="options-item flex-center">
                         <i class="icon">
-                            <svg id="notifications" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g>
-                                    <path d="M381.7,225.9c0-97.6-52.5-130.8-101.6-138.2c0-0.5,0.1-1,0.1-1.6c0-12.3-10.9-22.1-24.2-22.1c-13.3,0-23.8,9.8-23.8,22.1   c0,0.6,0,1.1,0.1,1.6c-49.2,7.5-102,40.8-102,138.4c0,113.8-28.3,126-66.3,158h384C410.2,352,381.7,339.7,381.7,225.9z"/>
-                                    <path d="M256.2,448c26.8,0,48.8-19.9,51.7-43H204.5C207.3,428.1,229.4,448,256.2,448z"/>
-                                </g>
-                            </svg>
+                            <img src="./img/icons/notification-icon.svg" alt="notificações">
                         </i>
                     </li>
                     <li class="options-item flex-center">
                         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/366be133850498.56ba69ac36858.png" class="avatar" alt="avatar">
                         <i class="icon">
-                            <svg class="account-dropdown" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:svg="http://www.w3.org/2000/svg">
-                                <g>
-                                    <polygon points="2.002,10 16.001,24 30.002,10"/>
-                                </g>
-                            </svg>
+                            <img src="./img/icons/acc-options.svg" alt="opções de conta">
                         </i>
                     </li>
                 </ul>
             </div>
         </div>
+
+        <div class="banner">
+            <div class="banner-filter">
+                <div class="container banner-info">
+                    <p class="banner-netflix-stamp"><span class="banner-netflix-stamp-logo">N</span>SÉRIE</p>
+                    <h3 class="banner-title">EXPRESSO<span class="banner-tittle-small flex-center"> DO </span>AMANHÃ</h3>
+                    <p class="banner-summary">
+                        A terra congelou. Os últimos sobreviventes vivem em um trem que viaja pelo mundo
+                        e se esforçam para manter uma complexa coexistência a bordo.
+                    </p>
+                    <div class="banner-options">
+                        <button class="banner-play flex-center">
+                            <i class="icon flex-center"><img src="./img/icons/play-icon.svg"></i> 
+                            Assistir
+                        </button>
+                        <button class="banner-more-info flex-center">
+                            <i class="icon flex-center"><img src="./img/icons/more-info-icon.svg"></i> 
+                            Mais informações
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Minha Lista</h3>
-            <ul class="carousel"></ul>
+       <section class="original-shows-wraper carousel-wraper">
+            <h3 class="container carousel-title">Originais Netflix</h3>
+                <div id="original-shows" class="carousel slider center slick-slider"></div>
         </section>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Originais Netflix</h3>
-            <ul class="carousel"></ul>
+      <section class="carousel-wraper">
+            <h3 class="container carousel-title">Em Alta</h3>
+            <div id="rising-shows" class="carousel slider center slick-slider"></div>
         </section>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Em Alta</h3>
-            <ul class="carousel"></ul>
+        <section class="carousel-wraper">
+            <h3 class="container carousel-title">Populares na Netflix</h3>
+            <div id="popular-shows" class="carousel slider center slick-slider"></div>
+            
         </section>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Assistir Novamente</h3>
-            <ul class="carousel"></ul>
-        </section>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Populares na Netflix</h3>
-            <ul class="carousel"></ul>
-        </section>
-        <section class="container carousel-wraper">
-            <h3 class="carousel-title">Lançamentos</h3>
-            <ul class="carousel"></ul>
+        <section class="carousel-wraper">
+            <h3 class="container carousel-title">Lançamentos</h3>
+            <div id="new-shows" class="carousel slider center slick-slider"></div>
         </section>
     </main>
-</body>
-</html>
+
+    <!-- jquery + slick carrossel-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <!-- configurações do slick-->
+    <script src="./js/carouselConfig.js"></script>
+
+    <!-- gerar thumbnails dos carrosseis-->
+    <script type="text/javascript" src="./js/originalShowsCarousel.js"></script>
+    <script type="text/javascript" src="./js/risingShowsCarousel.js"></script>
+    <script type="text/javascript" src="./js/popularCarousel.js"></script>
+    <script type="text/javascript" src="./js/newShowsCarousel.js"></script>
+
+    <!-- animação da barra de navegação -->
+    <script type="text/javascript" src="./js/navTransition.js"></script>

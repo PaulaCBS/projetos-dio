@@ -1,0 +1,102 @@
+@media only screen and (max-width: 850px) {
+  header, .banner, .banner-filter{
+    height: 85vw;
+  }
+  .navbar-wraper{
+    width: 100vw;
+    height: 15vw;
+    display: grid;
+    grid-template-areas: 
+    "logo acc-options"
+    "nav nav";
+  }
+  .logo{
+    grid-area: logo;
+    width: 15vw;
+  }
+  nav{
+    grid-area: nav;
+    width: 95vw;
+    display: flex;
+    justify-content: center;
+  }
+  .search-account-options{
+    grid-area: acc-options;
+    width: 80vw;
+  }
+  .banner-info{
+    width: 100%;
+    height: 90vw;
+    padding: 0 6rem;
+    align-items: center;
+    text-align: center;
+  }
+  .banner-netflix-stamp{
+    font-size: 1em;
+  }
+  
+  main{
+    position: relative;
+    top: 0;
+  }
+  .carousel-wraper{
+    height: 25vw;
+  }
+  .carousel-img{
+    width: 29.5vw;
+  }
+  .original-shows-wraper{
+    height: 55vw;
+  }
+  #original-shows .carousel-img{
+    width: 29.5vw;
+    height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  nav, .search-account-options, .options-list, .logo{
+    margin: 1rem 0;
+  }
+  .navbar-wraper{
+    height: 20vw;
+  }
+  header, .banner, .banner-filter{
+    height: 120vw;
+  }
+  .banner-info{
+    height: 160vw;
+  }
+  .banner-netflix-stamp{
+    font-size: 0.8em;
+    margin: 0.5rem 0;
+  }
+  .banner-title{
+    font-size: 2.5em;
+    margin: 1rem 0;
+  }
+  .banner-summary{
+    display: none;
+  }
+  .banner{
+    background: var(--background) url("https://image.tmdb.org/t/p/original/x76l3veGEqAgoAqMHW4BfWDYbi3.jpg") no-repeat 60% 0/cover;
+  }
+  .banner-play, .banner-more-info{
+    padding: 0.5rem 1.2rem;
+    font-size: 1em;
+  }
+
+  .carousel-wraper{
+    height: 35vw;
+  }
+  .carousel-img{
+    width: 41.5vw;
+  }
+  .original-shows-wraper{
+    height: 75vw;
+  }
+  #original-shows .carousel-img{
+    width: 42vw;
+    height: 60vw;
+  }
+}
