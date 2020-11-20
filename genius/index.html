@@ -2,33 +2,80 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/board.css">
+  <link rel="stylesheet" href="./css/menu-btns.css">
+  <link rel="stylesheet" href="./css/game-over.css">
+  <link rel="stylesheet" href="./css/media-queries.css">
   <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet"> 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"> 
   <title>Genius Clone</title>
 </head>
 <body>
-  <div class="container">
+  <div id="screen" class="container">
+
     <div class="genius">
-      <div id="green" class="color"><div class="center"></div></div>
-      <div id="yellow" class="color"><div class="center"></div></div>
-      
-      <div class="board-center">
+      <button id="green" class="color"><div class="center"></div></button>
+      <button id="yellow" class="color"><div class="center"></div></button>
+      <button id="red" class="color"><div class="center"></div></button>
+      <button id="blue" class="color"><div class="center"></div></button>
+    </div>
+
+    <div id="board-center">
+      <div id="homescreen">
         <div id="score">score: 0</div>
         <p class="game-title">GENIUS</p>
-        <div class="action-btn-wraper">
-          <button id="game-start-btn">START</button>
-          <button id="options-btn">OPTIONS</button>
+        <div class="menu-btns-wrapper">
+          <div id="pregame-btn-wrapper">
+            <button id="game-start-btn" class="menu-btn">START</button>
+            <button id="game-options-btn" class="menu-btn">OPTIONS</button>
+          </div>
+          <div id="ingame-btn-wrapper" class="hide">
+            <button id="repeat" class="menu-btn">REPEAT</button>
+            <button id="restart" class="menu-btn">RESTART</button>
+          </div>
         </div>
       </div>
-
-      <div id="red" class="color"><div class="center"></div></div>
-      <div id="blue" class="color"><div class="center"></div></div>
     </div>
-  </div>
+
+    <div id="options-menu" class="hide">
+      <p class="options-menu-title">OPTIONS</p>
+      <form class="option-group" autocomplete="off">
+        <button class="option-title">Speed</button>
+        <div id="speed-options">
+          <div class="option-wrapper">
+            <input type="radio" name="speed" class="speed-opt" value="1500">
+            <label for="speed-slow">Slow</label>
+          </div>
+          <div class="option-wrapper">
+            <input type="radio" name="speed" class="speed-opt" value="1000" checked>
+            <label for="speed-medium">Medium</label>
+          </div>
+          <div class="option-wrapper">
+            <input type="radio" name="speed" class="speed-opt" value="500">
+            <label for="speed-fast">Fast</label>
+          </div>
+        </div>
+      </form>
+      <form class="option-group" autocomplete="off">
+        <button class="option-title">Game Mode</button>
+        <div id="modes-options">
+          <div class="option-wrapper">
+            <input type="radio" name="modes" class="modes-opt" value="1" checked>
+            <label for="mode1">Normal</label>
+          </div>
+          <div class="option-wrapper">
+            <input type="radio" name="modes"class="modes-opt" value="2">
+            <label for="mode2">Reverse</label>
+          </div>
+          <div class="option-wrapper">
+            <input type="radio" name="modes"class="modes-opt" value="3">
+            <label for="mode3">No Colors</label>
+          </div>
+        </div>
+      </form>
+      <button id="back-home-btn">Back</button>
+    </div>
   <script src="./script.js"></script>
 </body>
 </html>

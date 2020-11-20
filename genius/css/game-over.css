@@ -1,0 +1,29 @@
+.game-over-screen{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  background: var(--background);
+  color: var(--text-highlight);
+  z-index: 2;
+}
+.game-over-msg{
+  margin: 3rem 0;
+  font-size: 4em;
+  text-align: center;
+  color: var(--text-highlight);
+  text-shadow: 
+  2px 2px #000, 
+  -2px -2px #000, 
+  5px 5px 1px #9171c5, 
+  -5px -5px 1px #2ef1e7, 
+  9px 9px 15px #666, 
+  -9px -9px 15px #666;
+}
+.play-again-btns{
+  margin: 1rem 0;
+}

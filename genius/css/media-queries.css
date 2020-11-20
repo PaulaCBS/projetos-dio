@@ -1,0 +1,91 @@
+@media only screen and (max-width: 990px){
+  .genius{
+    width: 70vw;
+    height: 70vw;
+  }
+  #board-center{
+    width: 40vw;
+    height: 40vw;
+  }
+  .game-title{
+    font-size: 3.5em;
+  }
+
+  .options-menu-title{
+    font-size: 4rem;
+  }
+  .option-title{
+    width: 30vw;
+  }
+  #back-home-btn{
+    width: 20vw;
+  }
+}
+@media only screen and (max-width: 700px){
+  .genius{
+    width: 75vw;
+    height: 75vw;
+  }
+  #board-center{
+    width: 45vw;
+    height: 45vw;
+  }
+  .game-title{
+    font-size: 2.7em;
+  }
+
+  .options-menu-title{
+    font-size: 3.5rem;
+  }
+  .option-title{
+    width: 45vw;
+  }
+  #back-home-btn{
+    width: 30vw;
+  }
+}
+@media only screen and (max-width: 550px){
+  .genius{
+    width: 85vw;
+    height: 85vw;
+  }
+  #board-center{
+    width: 50vw;
+    height: 50vw;
+  }
+  #score{
+    position: absolute;
+    top: -150px;
+  }
+  .menu-btns-wrapper{
+    position: absolute;
+    width: 100vw;
+    bottom: -150px;
+  }
+  .game-title{
+    font-size: 2em;
+  }
+  .options-menu-title{
+    font-size: 3rem;
+  }
+  .option-title{
+    width: 60vw;
+  }
+  #back-home-btn{
+    width: 50vw;
+  }
+}
+
+@media only screen and (max-height: 420px){
+  .genius, #board-center, #options-menu{
+    display: none;
+  }
+  .tiny-screen-warning{
+    padding: 1rem 3rem;
+    text-align: center;
+  }
+  .tiny-screen-msg{
+    color: #FFF;
+    font-size: 1.5em;
+  }
+}
